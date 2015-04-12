@@ -10,7 +10,7 @@ This is a sample file proxy image. Also you can use it to fake Firewall.
 ---
 
 ```
-docker run -ti -p 80:80 -e SOURCE_URL="URL" -e HOSTNAME="HOSTNAME" jakes/nginx-file-mirror
+docker run -ti -p 80:80 -e SOURCE_URL="URL" -e HOSTNAME="HOSTNAME" jakes/nginx-file-proxy
 ```
 
 #### Tips
@@ -23,5 +23,5 @@ docker run -ti -p 80:80 -e SOURCE_URL="URL" -e HOSTNAME="HOSTNAME" jakes/nginx-f
 
 It's very easy to do it. Run the command following:
 ```
-docker run -ti -p 80:80 -e SOURCE_URL="https://www.google.com" -e HOSTNAME="YOU DOMAIN" jakes/nginx-file-mirror
+docker run -ti -p 80:80 -e SOURCE_URL="https://www.google.com" -e HOSTNAME="YOU DOMAIN" jakes/nginx-file-proxy
 ```
