@@ -1,8 +1,8 @@
 FROM nginx
 MAINTAINER Jakes Lee <jakeslee66@gmail.com>
 
-ENV SOURCE_URL ""
-ENV HOSTNAME ""
+ENV SOURCE_URL=""
+ENV HOSTNAME=""
 
 COPY . /app/
 WORKDIR /app/
