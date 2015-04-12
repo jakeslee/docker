@@ -16,6 +16,7 @@ docker run -ti -p 80:80 -e SOURCE_URL="URL" -e HOSTNAME="HOSTNAME" jakes/nginx-f
 #### Tips
 1. SOURCE_URL must have prefix HTTP or HTTPS
 2. HOSTNAME has no prefix
+3. IF HOSTNAME is empty, please link the proxy container with alias 'host'
 
 ### Examples
 ---

@@ -3,7 +3,7 @@ set -e
 
 if [[ -n "$SOURCE_URL" ]]; then
 	if [[ -z "$HOSTNAME" ]]; then
-		HOSTNAME="localhost"
+		HOSTNAME="$HOTS_PORT_80_TCP_ADDR"
 	fi
 else
 	SOURCE_URL='http://www.google.com'
