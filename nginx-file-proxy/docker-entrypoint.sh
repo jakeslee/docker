@@ -19,7 +19,8 @@ if [[ -e default.conf ]]; then
 	sed "s@HOSTNAME@$HOSTNAME@g;\
 		s@SOURCE_URL@$SOURCE_URL@g;\
 		s@SOURCE_DOMAIN@$SOURCE_DOMAIN@g" \
-		default.conf > /etc/nginx/conf.d/default.conf
+		default.conf > /etc/nginx/conf.d/file_mirror.conf
 fi
 
 echo "$@"
+exec $@
